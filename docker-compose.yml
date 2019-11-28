@@ -8,6 +8,7 @@ services:
       - ./data/nginx:/etc/nginx/conf.d
       - ./data/certbot/conf:/etc/letsencrypt
       - ./data/certbot/www:/var/www/certbot
+      # mount a volume to serve static files from - ./path/to/static/files:/path/to/static/files
     ports:
       - "80:80"
       - "443:443"
